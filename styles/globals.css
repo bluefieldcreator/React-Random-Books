@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.link {
+  @apply hover:underline;
+}
+
+input {
+  @apply p-1 focus:outline-none m-1 border-black border-2;
+}
+
+h1 {
+  @apply mx-1
+}
+
+button {
+  @apply border-black border-2 mx-1  p-1 hover:bg-black focus:bg-zinc-700 focus:text-white hover:text-white;
+}
+
+.gridthing {
+  column-count: 5;
+}
+
+.item {
+  display: inline-block;
+  width: 100%;
+  @apply h-fit;
+}
